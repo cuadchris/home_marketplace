@@ -9,6 +9,7 @@ import {
 } from "firebase/auth";
 import { db } from "../firebase.config";
 import { doc, setDoc, serverTimestamp } from "firebase/firestore";
+import { toast } from "react-toastify";
 
 export const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -53,7 +54,7 @@ export const SignUp = () => {
 
       navigate("/");
     } catch (error) {
-      console.log(error);
+      toast.error("Something went wrong. Try again.");
     }
   };
 
@@ -114,9 +115,15 @@ export const SignUp = () => {
         </form>
 
         {/* google 0auth */}
-        <Link to="/sign-in" className="registerLink">
+
+        <div className="justtest">
+          <Link to="/sign-in" className="registerLink">
+            Sign In Instead
+          </Link>
+        </div>
+        {/* <Link to="/sign-in" className="registerLink">
           Sign In Instead
-        </Link>
+        </Link> */}
       </div>
     </>
   );

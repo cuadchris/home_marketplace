@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 import { Link, useNavigate } from "react-router-dom";
 import { ReactComponent as ArrowRightIcon } from "../assets/svg/keyboardArrowRightIcon.svg";
 import visibilityIcon from "../assets/svg/visibilityIcon.svg";
@@ -38,7 +39,7 @@ export const SignIn = () => {
         navigate("/");
       }
     } catch (error) {
-      console.log(error);
+      toast.error("Bad user credentials");
     }
   };
 
@@ -89,9 +90,15 @@ export const SignIn = () => {
         </form>
 
         {/* google 0auth */}
-        <Link to="/sign-up" className="registerLink">
+
+        <div className="justtest">
+          <Link to="/sign-up" className="registerLink">
+            Sign Up Instead
+          </Link>
+        </div>
+        {/* <Link to="/sign-up" className="registerLink">
           Sign Up Instead
-        </Link>
+        </Link> */}
       </div>
     </>
   );
