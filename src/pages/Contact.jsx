@@ -59,7 +59,7 @@ const Contact = () => {
                 "listingName"
               )}&body=${message}`}
             >
-              <button type="button" className="primaryButton">
+              <button type="button" className="primaryButton bringUp">
                 Send Message
               </button>
             </a>

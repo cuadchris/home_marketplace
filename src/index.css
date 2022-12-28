@@ -66,10 +66,7 @@ button {
   font-weight: 600;
   font-size: 1.25rem;
   width: 80%;
-  /* margin: 0 auto; */
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -1.7rem;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -829,4 +826,8 @@ button {
   margin-left: 1rem;
   font-size: 0.8rem;
   opacity: 0.75;
+}
+
+.bringUp {
+  margin-top: -2rem;
 }
