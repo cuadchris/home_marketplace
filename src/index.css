@@ -66,7 +66,10 @@ button {
   font-weight: 600;
   font-size: 1.25rem;
   width: 80%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -1.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -292,7 +295,7 @@ button {
 .justtest {
   display: flex;
   place-content: center;
-    /* justify-content: center;
+  /* justify-content: center;
   align-items: center; */
 }
 
