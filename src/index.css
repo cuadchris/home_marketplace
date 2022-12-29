@@ -75,13 +75,13 @@ button {
 .removeIcon {
   cursor: pointer;
   position: absolute;
-  top: -6%;
+  top: -9%;
   right: -2%;
 }
 .editIcon {
   cursor: pointer;
   position: absolute;
-  top: -5%;
+  top: -9%;
   right: 20px;
 }
 

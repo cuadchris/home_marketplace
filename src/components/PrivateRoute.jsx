@@ -7,7 +7,7 @@ import Spinner from "./Spinner";
 const PrivateRoute = () => {
   // const { loggedIn, checkingStatus} = useAuthStatus()
   const auth = getAuth();
-  const [user, loading, error] = useAuthState(auth);
+  const [user, loading] = useAuthState(auth);
 
   if (loading) {
     return <Spinner />;

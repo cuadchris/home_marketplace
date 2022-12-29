@@ -60,7 +60,7 @@ export const Profile = () => {
     };
 
     fetchUserListings();
-  }, []);
+  }, [auth.currentUser.uid]);
 
   const onLogout = () => {
     auth.signOut();
